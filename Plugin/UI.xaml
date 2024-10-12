@@ -25,18 +25,37 @@
 					</StackPanel>
 				</StackPanel>
 			</styles:SHSubSection>
-			<styles:SHSubSection Title="Log">
-				<StackPanel>
-					<StackPanel Orientation="Horizontal">
-						<styles:SHButtonPrimary Name="ClearLog" Click="ClearLog_Click">Clear Log</styles:SHButtonPrimary>
-						<styles:SHToggleCheckbox Name="ChkShowLog" Checked="ChkShowLog_Toggled" Unchecked="ChkShowLog_Toggled">
-							Show Updates
-						</styles:SHToggleCheckbox>
-					</StackPanel>
-					<TextBlock x:Name="Log" Background="Gray">
+            <styles:SHSubSection Title="vJoy">
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Height="26
+							   ">Device Id</Label>
+                        <TextBox Width="100" IsReadOnly="False" Text="1" TextAlignment="Right" Height="16"/>
+                    </StackPanel>
+                </StackPanel>
+            </styles:SHSubSection>
+            <styles:SHSubSection Title="Calibrate">
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <styles:SHButtonPrimary Name="x" Click="x_click">Sway</styles:SHButtonPrimary>
+                        <styles:SHButtonPrimary Name="y" Click="y_click">Heave</styles:SHButtonPrimary>
+                        <styles:SHButtonPrimary Name="z" Click="z_click">Surge</styles:SHButtonPrimary>
+                        <styles:SHButtonPrimary Name="caxis" Click="caxis_click">Center All Axis</styles:SHButtonPrimary>
+                    </StackPanel>
+                </StackPanel>
+            </styles:SHSubSection>
+            <styles:SHSubSection Title="Log">
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <styles:SHButtonPrimary Name="ClearLog" Click="ClearLog_Click">Clear Log</styles:SHButtonPrimary>
+                        <styles:SHToggleCheckbox Name="ChkShowLog" Checked="ChkShowLog_Toggled" Unchecked="ChkShowLog_Toggled">
+                            Show Updates
+                        </styles:SHToggleCheckbox>
+                    </StackPanel>
+                    <TextBlock x:Name="Log" Background="Gray">
 					</TextBlock>
 				</StackPanel>
 			</styles:SHSubSection>
-		</StackPanel>
+        </StackPanel>
 	</Grid>
 </UserControl>

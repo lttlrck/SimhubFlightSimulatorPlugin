@@ -65,5 +65,22 @@ namespace JZCoding.Simhub.FlightPlugin {
 			this.Plugin.StopUdpServer();
 			this.UpdateUI(sender, e);
 		}
-	}
+
+        private void x_click(object sender, RoutedEventArgs e)
+        {
+			this.Plugin.X();
+        }
+        private void y_click(object sender, RoutedEventArgs e)
+        {
+            this.Plugin.Y();
+        }
+        private void z_click(object sender, RoutedEventArgs e)
+        {
+            this.Plugin.Z();
+        }
+        private void caxis_click(object sender, RoutedEventArgs e)
+        {
+            this.Plugin.ClearAxis();
+        }
+    }
 }

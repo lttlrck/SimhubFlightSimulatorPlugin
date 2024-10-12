@@ -172,9 +172,16 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\vJoyInterfaceCS\vJoyInterfaceWrap\vJoyInterfaceWrap.csproj">
+      <Project>{ff5aae17-ba16-46b5-8c7b-ac860878d008}</Project>
+      <Name>vJoyInterfaceWrap</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>XCOPY /Y /R "$(TargetDir)\$(TargetName)*" "%25SIMHUB_INSTALL_PATH%25"</PostBuildEvent>
+    <PostBuildEvent>XCOPY /Y /R "$(TargetDir)\$(TargetName)*" "C:\Program Files (x86)\SimHub\"
+</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
